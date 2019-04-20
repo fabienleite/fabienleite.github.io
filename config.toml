@@ -1,0 +1,29 @@
+baseURL = "https://fabienleite.github.io/"
+languageCode = "en-us"
+theme = ["hallo"]
+title = "Fabien Leite - Application Security Engineer"
+
+[Author]
+    name = "Fabien Leite"
+
+[params.colors]
+  background = "#312c32"
+  foreground = "#edf7ff"
+  hover = "#98dafc"
+
+[params]
+    [[params.links]]
+        icon = "github"
+        title = "Github"
+        url = "https://github.com/fabienleite"
+    
+    [[params.links]]
+        icon = "linkedin"
+        title = "Linkedin"
+        url = "https://www.linkedin.com/in/fabien-leite/"
+
+    [[params.links]]
+        iconset = "fas"
+        icon = "envelope"
+        title = "e-mail"
+        url = "mailto:fabienleite+github-io@protonmail.com"
