@@ -1,10 +1,10 @@
 language: go
-
+provider: script
 dist: xenial
 sudo: true
 
 install:
-  - ./install-hugo.sh
+  - bash install-hugo.sh
 script:
   - hugo
 
