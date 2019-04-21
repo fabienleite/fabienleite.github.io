@@ -4,9 +4,7 @@ dist: xenial
 sudo: true
 
 install:
-  - sudo apt-get update
-  - sudo apt-get install hugo
-
+  - ./install-hugo.sh
 script:
   - hugo
 
