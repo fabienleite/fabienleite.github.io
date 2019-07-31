@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Fabien Leite - Application Security Engineer</title>
+    <title>Tags on Fabien Leite</title>
     <link>https://fabienleite.github.io/tags/</link>
-    <description>Recent content in Tags on Fabien Leite - Application Security Engineer</description>
+    <description>Recent content in Tags on Fabien Leite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Fabien Leite</copyright>
     
 	<atom:link href="https://fabienleite.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
