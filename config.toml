@@ -25,7 +25,7 @@ enableEmoji = true
     title = "Fabien Leite"
     subtitle = "Appsec and stuff."
     mdtext = '''The idea of this blog is to talk about things I'm interested in. \
-                I'm an application so it will probably mainly talk about Application Security but you can also expect\
+                I'm an application security engineer so it will probably mainly talk about Application Security but you can also expect\
                 a few words about accessibility and other subjects.'''
     alertbar = true
 
