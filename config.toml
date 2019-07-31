@@ -1,29 +1,36 @@
-baseURL = "https://fabienleite.github.io/"
+baseURL = "https://fabienleite.github.io"
 languageCode = "en-us"
-theme = ["hallo"]
-title = "Fabien Leite - Application Security Engineer"
-
-[Author]
-    name = "Fabien Leite"
-
-[params.colors]
-  background = "#312c32"
-  foreground = "#edf7ff"
-  hover = "#98dafc"
+title = "Fabien Leite"
+theme = "mediumish-gohugo-theme"
+summaryLength = 25
+copyright = "Fabien Leite"
+logo = "/images/icon.png"
+enableEmoji = true
 
 [params]
-    [[params.links]]
-        icon = "github"
-        title = "Github"
-        url = "https://github.com/fabienleite"
-    
-    [[params.links]]
-        icon = "linkedin"
-        title = "Linkedin"
-        url = "https://www.linkedin.com/in/fabien-leite/"
+  description ="A blog about Appsec and things"
 
-    [[params.links]]
-        iconset = "fas"
-        icon = "envelope"
-        title = "e-mail"
-        url = "mailto:fabienleite+github-io@protonmail.com"
+    [params.author]
+    name = "Fabien Leite"
+    thumbnail = "/images/portrait.jpg"
+    description = "Appsec engineer, defender of the developer in a secure future."
+
+    [params.social]
+    github = "fabienleite"
+    linkedin = "fabien-leite"
+    twitter = "FabienLeite"
+
+    [params.index]
+    picture = "/images/portrait.jpg"
+    title = "Fabien Leite"
+    subtitle = "Appsec and stuff."
+    mdtext = '''The idea of this blog is to talk about things I'm interested in. \
+                I'm an application so it will probably mainly talk about Application Security but you can also expect\
+                a few words about accessibility and other subjects.'''
+    alertbar = true
+
+[[menu.main]]
+    name = "Blog"
+    weight = 120
+    identifier = "blog"
+    url = "/blog/"
