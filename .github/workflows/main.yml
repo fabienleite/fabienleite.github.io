@@ -17,7 +17,14 @@ jobs:
           auth_header="$(git config --local --get http.https://github.com/.extraheader)"
           git submodule sync --recursive
           git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
-      - uses: jsumners/gh-action-hugo-deploy@v1.0.0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          destination_repo: fabienleite/fabienleite.github.io
-          destination_token: ${{ secrets.Deploy_Token }}
+          hugo-version: '0.62.2'
+      - name: Build
+        run: hugo --minify
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./public
