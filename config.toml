@@ -1,36 +1,74 @@
-baseURL = "https://fabienleite.github.io"
-languageCode = "en-us"
+baseurl = "https://fabienleite.github.io/" 
 title = "Fabien Leite"
-theme = "mediumish-gohugo-theme"
-summaryLength = 25
-copyright = "Fabien Leite"
-logo = "/images/icon.png"
-enableEmoji = true
+theme = "coder-portfolio"
+languagecode = "en" 
+defaultcontentlanguage = "en" 
+
+paginate = 20 
+
+pygmentsstyle = "b2"
+pygmentscodefences = true 
+pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true 
 
 [params]
-  description ="A blog about Appsec and things"
+    author = "Fabien Leite" 
+    info = "Application Security Engineer & Software Crafter" 
+    description = "Fabien Leite - Application security engineer"
+    keywords = "security,development"
+    avatarurl = "images/portrait.jpg"
 
-    [params.author]
-    name = "Fabien Leite"
-    thumbnail = "/images/portrait.jpg"
-    description = "Appsec engineer, defender of the developer in a secure future."
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = false
+    hideCopyright = true
 
-    [params.social]
-    github = "fabienleite"
-    linkedin = "fabien-leite"
-    twitter = "FabienLeite"
+    # Custom CSS
+    custom_css = ["css/custom.css"]
 
-    [params.index]
-    picture = "/images/portrait.jpg"
-    title = "Fabien Leite"
-    subtitle = "Appsec and stuff."
-    mdtext = '''The idea of this blog is to talk about things I'm interested in. \
-                I'm an application security engineer so it will probably mainly talk about Application Security but you can also expect\
-                a few words about accessibility and other subjects.'''
-    alertbar = true
+    # Alignment of Mobile Menu items
+    itemscentered = true
 
+    # RTL support
+    rtl = false
+
+    # Bottom sns share
+    snsShare = true # new add
+    # Popular sns share
+    # if you want add sns. please message!
+    enableTwitterShare = false  # new add
+    enableFacebookShare = false # new add
+    enableHatenaShare = false   # new add
+    enableLineShare = false     # new add
+    enableLinkedInShare = false # new add
+
+    thumbnail = "images/tn.png" # default sns thumbnail
+
+    # Multilanguage mode
+    langseparator = "|" # Separates menus from language selectors when site is multilingual.
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/fabienleite/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 2
+    url = "https://twitter.com/FabienLeite"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 3
+    url = "https://www.linkedin.com/in/fabien-leite/"
+
+# Menu links
 [[menu.main]]
     name = "Blog"
-    weight = 120
-    identifier = "blog"
-    url = "/blog/"
+    weight = 1
+    url  = "https://blog.octo.com/author/fabien-leite-lefa/"
+[[menu.main]]
+    name = "{}"
+    weight = 1
+    url  = "https://github.com/fabienleite/fabienleite.github.io/"
