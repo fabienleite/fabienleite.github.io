@@ -1,0 +1,11 @@
+body {
+  background-color: #27282c;
+}
+
+* {
+  color: #E6E6E6 !important;
+}
+
+section.container.centered {
+  height: 35em;
+}
