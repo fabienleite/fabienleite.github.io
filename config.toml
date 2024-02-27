@@ -67,7 +67,7 @@ pygmentsUseClasses = true
 [[menu.main]]
     name = "Blog"
     weight = 1
-    url  = "https://blog.octo.com/author/fabien-leite-lefa/"
+    url  = "https://blog.octo.com/author/fabien.leite/"
 [[menu.main]]
     name = "{}"
     weight = 1
